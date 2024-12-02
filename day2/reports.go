@@ -2,6 +2,7 @@ package main
 
 type reports [][]int
 
+// countSafe returns the count of safe reports.
 func (r reports) countSafe() int {
 	var count int
 
@@ -14,6 +15,7 @@ func (r reports) countSafe() int {
 	return count
 }
 
+// determineSafe checks the conditions for a safe report.
 func (r reports) determineSafe(report []int) bool {
 	var isInc bool
 	var isDec bool
