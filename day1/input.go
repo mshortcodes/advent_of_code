@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+// parseInput handles the cleaning and parsing of the
+// input into a single struct of two separate lists.
 func parseInput(input []byte) (lists, error) {
 	var parsed lists
 
